@@ -10,7 +10,6 @@ function agregarAmigo() {
     if (nombre2.length==0) {
         alert("Por favor, inserte un nombre");
     }else{
-        alert("Amigo agregado")
         amigos.push(nombre2);
         document.querySelector("#amigo").value="";
         actualizarLista();
@@ -21,10 +20,10 @@ function sortearAmigo() {
     if (amigos.length<1) {
         alert("Agrega primero amigos");
     }else{
-        console.log(amigos.length+"antes");
+        console.log(amigos.length+"antes");//banderas en consola
         numeroSorteado = Math.random()*amigos.length;
         numeroSorteado = Math.trunc(numeroSorteado);
-        console.log("numero pos "+numeroSorteado);
+        console.log("numero pos "+numeroSorteado);//banderas en consola
         
         var ul = document.querySelector('#resultado');
         var li= document.createElement('li');
